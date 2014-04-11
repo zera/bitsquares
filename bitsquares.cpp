@@ -97,7 +97,7 @@ void analyze(const string& bs, bool verb)
 
 searchres search(int pos, string& s)
 {
-    searchres ret{0,0};
+    searchres ret = {0,0};
     if (pos == s.length()) {
         ret.maxsquares = countsquares(s, false);
         ret.canflip = checksets(s, false);
